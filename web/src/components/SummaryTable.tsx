@@ -26,7 +26,6 @@ export function SummaryTable() {
             setSummary(response.data);
         });
     }, []);
-
     return (
         <div className="w-full flex">
             <div className="grid grid-rows-7 grid-flow-row gap-3">
@@ -52,7 +51,7 @@ export function SummaryTable() {
                             key={date.toString()}
                             date={date}
                             amount={dayInSummary?.amount} 
-                            completed={dayInSummary?.completed} 
+                            completed={dayInSummary?.completed}
                         />
                     )
                 })}
